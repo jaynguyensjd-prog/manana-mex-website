@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Manana Mex Brekkie</title>
+  <meta name="description" content="Who Said Burritos Sleep In? Manana Mex breakfast: hot, made-to-order burritos from 6:00 to 10:30am.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=DM+Mono:wght@400;500&family=Shrikhand&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="#home" aria-label="Manana Mex home">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M7 29 A13 13 0 0 1 33 29 Z" fill="#FFC21A"/><g stroke="#FFC21A" stroke-width="3" stroke-linecap="round" fill="none"><path d="M20 4 V9"/><path d="M7.3 13.3 L10.8 16.8"/><path d="M32.7 13.3 L29.2 16.8"/><path d="M3 34 H37"/></g></svg>
+      Manana Mex
+    </a>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main">
+      <a href="#home">Home</a>
+      <a href="#menu">Brekkie menu</a>
+      <a href="#one-hand">One hand</a>
+      <a href="#order">Order ahead</a>
+      <a href="#find">Find us</a>
+      <a href="#mascot">Mananito</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <span class="status-pill" id="status-pill"><span class="dot" id="pill-dot"></span><span id="pill-text">Brekkie 6:00–10:30am</span></span>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <button class="bag-btn" id="bag-btn" type="button" aria-haspopup="dialog"><span class="bag-label">Bag</span><span class="count" id="bag-count">0</span></button>
+  </div>
+</header>
+
+<main>
+  <!-- ================= HOME ================= -->
+  <div class="view" data-view="home">
+    <section class="hero" aria-labelledby="home-title">
+      <div class="wrap">
+        <div class="hero-copy">
+          <div class="hero-clock">
+            <span class="clock-face" aria-hidden="true"><span id="clk-h">7</span><span class="colon">:</span><span id="clk-m">30</span><small id="clk-ap">am</small></span>
+            <span class="clock-label"><b>Sydney time</b><span id="hero-status">Brekkie is served 6:00 to 10:30am.</span></span>
+          </div>
+          <h1 id="home-title" tabindex="-1">Who said burritos <span class="script">sleep in?</span></h1>
+          <p class="hero-lede">Manana Mex breakfast starts at 6:00am. Hot, made-to-order burritos, bowls and coffee, wrapped to eat with one hand on the way to class, work or an early shift.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#menu">Build your brekkie</a>
+            <a class="btn btn-ghost" href="#find">Find a restaurant</a>
+          </div>
+          <dl class="board">
+            <div><dt>Brekkie</dt><dd>06:00–10:30</dd></div>
+            <div><dt>Order ahead</dt><dd>Night before</dd></div>
+            <div><dt>Drive-thrus</dt><dd>143</dd></div>
+          </dl>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="sunburst"></div>
+          <div class="sun"></div>
+          <div class="hero-mascot" id="hero-mascot"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Hot and made to order <i></i> One hand free <i></i> Bagged before your train <i></i> Brekkie 6:00–10:30am <i></i> Order ahead in the app <i></i> Burritos from $5.90 <i></i></span>
+        <span>Hot and made to order <i></i> One hand free <i></i> Bagged before your train <i></i> Brekkie 6:00–10:30am <i></i> Order ahead in the app <i></i> Burritos from $5.90 <i></i></span>
+      </div>
+    </div>
+
+    <section class="section" aria-labelledby="hub-title">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="stamp"><time>6:15am</time>Plan your morning</p>
+          <h2 class="sub-title" id="hub-title">Where to next?</h2>
+        </header>
+        <div class="hub">
+          <a class="hub-card" href="#menu">
+            <div class="hub-art" style="background:var(--yolk-soft)" data-hub-art="menu"></div>
+            <div class="hub-body"><span class="hub-time">7:12am</span><h3>Brekkie menu</h3><p>Burritos, bowls, tacos, coffee and combos from $5.90.</p><span class="hub-go">See the menu <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12 H19 M13 6 L19 12 L13 18" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+          </a>
+          <a class="hub-card" href="#one-hand">
+            <div class="hub-art" style="background:var(--tortilla)" data-hub-art="wrap"></div>
+            <div class="hub-body"><span class="hub-time">7:28am</span><h3>One hand</h3><p>The new breakfast wrap, built to eat on a moving train.</p><span class="hub-go">See the wrap <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12 H19 M13 6 L19 12 L13 18" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+          </a>
+          <a class="hub-card" href="#order">
+            <div class="hub-art" style="background:var(--avo-soft)"><div class="ticket"><span>Pickup · Macquarie Centre</span><b>Ready 7:35am</b></div></div>
+            <div class="hub-body"><span class="hub-time">7:30am</span><h3>Order ahead</h3><p>Order on the way and it's bagged before you walk in.</p><span class="hub-go">How it works <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12 H19 M13 6 L19 12 L13 18" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+          </a>
+          <a class="hub-card" href="#find">
+            <div class="hub-art" style="background:var(--paper)" data-hub-art="find"></div>
+            <div class="hub-body"><span class="hub-time">7:41am</span><h3>Find us</h3><p>Next to the stations, campuses and drive-thrus you pass every day.</p><span class="hub-go">Find a restaurant <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12 H19 M13 6 L19 12 L13 18" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+          </a>
+          <a class="hub-card" href="#mascot">
+            <div class="hub-art bottom" style="background:var(--salsa)" data-hub-art="mascot"></div>
+            <div class="hub-body"><span class="hub-time">8:00am</span><h3>Meet Mananito</h3><p>The burrito who has never slept in, and his morning episodes.</p><span class="hub-go">Meet him <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12 H19 M13 6 L19 12 L13 18" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+          </a>
+          <a class="hub-card" href="#faq">
+            <div class="hub-art" style="background:var(--yolk)"><div class="board-tile"><b>10:29</b><span>Last call</span></div></div>
+            <div class="hub-body"><span class="hub-time">10:29am</span><h3>FAQ</h3><p>Hours, pre-orders, student deals and dietary options.</p><span class="hub-go">Read the answers <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12 H19 M13 6 L19 12 L13 18" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+          </a>
+        </div>
+
+        <header class="sec-head" style="margin-top:clamp(56px,8vw,96px)">
+          <p class="stamp"><time>6:45am</time>Most ordered before 9am</p>
+          <h2 class="sub-title">Crowd favourites</h2>
+        </header>
+        <div class="menu-grid" id="fav-grid"></div>
+
+        <div class="promo">
+          <div>
+            <h2>Uni Saver <span>$9.90</span></h2>
+            <p>A Mini Manana, a hash brown and a flat white for less than ten dollars. Built for 8am lectures and early café shifts.</p>
+            <div class="cta-row">
+              <button class="btn btn-yolk" type="button" data-add="uni">Add Uni Saver</button>
+              <button class="btn btn-line-light" type="button" data-goto-filter="combo">See all combos</button>
+            </div>
+          </div>
+          <div class="promo-art" data-hub-art="uni"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ================= MENU ================= -->
+  <div class="view" data-view="menu" hidden>
+    <section class="section">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="stamp"><time>7:12am</time>The brekkie menu</p>
+          <h1 class="page-title" tabindex="-1">Brekkie, wrapped and ready to roll.</h1>
+          <p class="lede">Everything is made when you order it and served from 6:00 until 10:30am, every day. Tap Add to put it in your bag, then pick a pickup time.</p>
+        </header>
+        <div class="filters" role="group" aria-label="Filter the menu" id="menu-filters">
+          <button class="chip" type="button" data-filter="all" aria-pressed="true">Everything</button>
+          <button class="chip" type="button" data-filter="burrito" aria-pressed="false">Burritos</button>
+          <button class="chip" type="button" data-filter="bowl" aria-pressed="false">Bowls &amp; tacos</button>
+          <button class="chip" type="button" data-filter="side" aria-pressed="false">Sides</button>
+          <button class="chip" type="button" data-filter="drink" aria-pressed="false">Coffee &amp; drinks</button>
+          <button class="chip" type="button" data-filter="combo" aria-pressed="false">Combos</button>
+        </div>
+        <div class="menu-grid" id="menu-grid" aria-live="polite"></div>
+        <div class="menu-note">
+          <span>The average adult daily energy intake is 8,700 kJ.</span>
+          <span>V vegetarian · VG vegan · GF made without gluten ingredients</span>
+          <span>Our kitchens handle gluten, nuts and dairy, so we can't promise any item is allergen-free.</span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ================= ONE HAND ================= -->
+  <div class="view" data-view="one-hand" hidden>
+    <section class="section onehand">
+      <div class="wrap">
+        <div class="oh-grid">
+          <div class="platform">
+            <div class="platform-sign" aria-hidden="true"><span>Platform 2 · 7:42 City</span><span class="ontime">On time</span></div>
+            <div class="oh-fig" id="oh-mascot"></div>
+            <div class="platform-edge" aria-hidden="true"></div>
+          </div>
+          <div class="oh-copy">
+            <header class="sec-head" style="margin-bottom:0">
+              <p class="stamp"><time>7:28am</time>Out the door</p>
+              <h1 class="page-title" tabindex="-1">One hand for brekkie. One for everything else.</h1>
+              <p class="lede">Mananito always has breakfast in one hand. The other hand is free for whatever your morning throws at you.</p>
+            </header>
+            <fieldset class="hand-pick" id="hand-pick">
+              <legend>What's in your other hand?</legend>
+              <div class="hand-options">
+                <span class="opt"><input type="radio" name="hand" id="hand-phone" value="phone" checked><label for="hand-phone">Phone</label></span>
+                <span class="opt"><input type="radio" name="hand" id="hand-card" value="card"><label for="hand-card">Opal card</label></span>
+                <span class="opt"><input type="radio" name="hand" id="hand-coffee" value="coffee"><label for="hand-coffee">Coffee</label></span>
+                <span class="opt"><input type="radio" name="hand" id="hand-backpack" value="backpack"><label for="hand-backpack">Backpack strap</label></span>
+              </div>
+            </fieldset>
+            <p class="oh-caption" id="oh-caption" aria-live="polite">Reply to the group chat between bites.</p>
+          </div>
+        </div>
+
+        <div class="wrap-band">
+          <div class="wrap-diagram" id="wrap-diagram"></div>
+          <div>
+            <h2>The new brekkie wrap</h2>
+            <p class="band-lede">Breakfast gets its own packaging, separate from lunch and dinner. It's built so you can eat the whole thing with one hand on a moving train.</p>
+            <ol class="callouts">
+              <li><span class="num">1</span><div><b>Tear strip</b><p>Pull the red tab and the top unwraps in one clean strip. Your thumb does all the work.</p></div></li>
+              <li><span class="num">2</span><div><b>Fold-down top</b><p>Fold it back over between bites, so nothing drips on your phone or the seat.</p></div></li>
+              <li><span class="num">3</span><div><b>Grip sleeve</b><p>A thicker printed sleeve that holds the heat in and keeps your fingers clean.</p></div></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ================= ORDER AHEAD ================= -->
+  <div class="view" data-view="order" hidden>
+    <section class="section">
+      <div class="wrap">
+        <div class="order-grid">
+          <div>
+            <header class="sec-head">
+              <p class="stamp"><time>7:30am</time>Order ahead</p>
+              <h1 class="page-title" tabindex="-1">Order on the way. It's ready when you walk in.</h1>
+            </header>
+            <ol class="steps">
+              <li><div><h3>Pick your brekkie</h3><p>Order in the app or right here on the site. Do it on the train, or the night before.</p></div></li>
+              <li><div><h3>Choose a time and place</h3><p>Pick a pickup slot between 6:00 and 10:30am, at the counter or the drive-thru.</p></div></li>
+              <li><div><h3>Grab it and go</h3><p>It's bagged on the pickup shelf with your name at your time. One hand, back out the door.</p></div></li>
+            </ol>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#menu">Start an order</a>
+              <button class="btn btn-ghost" type="button" data-open-bag>Open your bag</button>
+            </div>
+          </div>
+          <div class="phone" aria-hidden="true">
+            <div class="phone-screen">
+              <div class="ph-top"><span class="ph-logo">Manana Mex</span><span>7:21</span></div>
+              <p class="ph-eyebrow">Pickup order · Emily</p>
+              <p class="ph-big">Ready 7:35am</p>
+              <p class="ph-store">Macquarie Centre · pickup shelf</p>
+              <ul class="ph-items">
+                <li><span>1× Grab &amp; Go Combo</span><span>$15.90</span></li>
+                <li class="sub"><span>The 7:42</span></li>
+                <li class="sub"><span>Hash Brown</span></li>
+                <li class="sub"><span>Flat White, oat</span></li>
+              </ul>
+              <div class="ph-total"><span>Paid</span><span>$15.90</span></div>
+              <div class="ph-track"><span class="done">Received</span><span class="now">Making</span><span>Bagged</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ================= FIND US ================= -->
+  <div class="view" data-view="find" hidden>
+    <section class="section find">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="stamp"><time>7:41am</time>On your way</p>
+          <h1 class="page-title" tabindex="-1">143 drive-thrus. 31 that never close.</h1>
+          <p class="lede">We're next to the stations, campuses and main roads you already use. Here are a few of our 255 restaurants in Sydney and Melbourne.</p>
+        </header>
+        <div class="finder-controls">
+          <label class="search" for="store-q">
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="#1F1611" stroke-width="2.5"/><path d="M15.5 15.5 L21 21" stroke="#1F1611" stroke-width="2.5" stroke-linecap="round"/></svg>
+            <span class="sr-only">Search by suburb, station or campus</span>
+            <input type="search" id="store-q" placeholder="Suburb, station or campus" autocomplete="off">
+          </label>
+          <div class="chip-group" role="group" aria-label="City">
+            <button class="chip" type="button" data-city="all" aria-pressed="true">All</button>
+            <button class="chip" type="button" data-city="Sydney" aria-pressed="false">Sydney</button>
+            <button class="chip" type="button" data-city="Melbourne" aria-pressed="false">Melbourne</button>
+          </div>
+          <div class="chip-group" role="group" aria-label="Features">
+            <button class="chip" type="button" data-toggle="drive" aria-pressed="false">Drive-thru</button>
+            <button class="chip" type="button" data-toggle="allday" aria-pressed="false">Open 24/7</button>
+          </div>
+        </div>
+        <p class="store-count" id="store-count" aria-live="polite"></p>
+        <div class="store-grid" id="store-grid"></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ================= MANANITO ================= -->
+  <div class="view" data-view="mascot" hidden>
+    <section class="section crew">
+      <div class="wrap">
+        <div class="crew-head">
+          <div>
+            <p class="stamp"><time>8:00am</time>Meet the crew</p>
+            <h1 class="crew-name" tabindex="-1">Mananito</h1>
+            <p class="crew-sub">The burrito who has never slept in.</p>
+          </div>
+          <dl class="bio">
+            <div><dt>Alarm</dt><dd>6:00am. No snooze button.</dd></div>
+            <div><dt>Commute</dt><dd>The 7:42 to the city, every weekday</dd></div>
+            <div><dt>Signature move</dt><dd>Brekkie in one hand, always</dd></div>
+            <div><dt>Weakness</dt><dd>Anyone who says Mexican isn't breakfast food</dd></div>
+          </dl>
+        </div>
+        <div class="ep-intro">
+          <h2>Morning episodes</h2>
+          <p>New on TikTok Tuesdays 8am and Thursdays 4pm · @mananamex</p>
+        </div>
+        <div class="ep-scroll">
+          <ol class="ep-row" id="ep-row"></ol>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ================= FAQ ================= -->
+  <div class="view" data-view="faq" hidden>
+    <section class="section">
+      <div class="wrap faq-grid">
+        <header class="sec-head">
+          <p class="stamp"><time>10:29am</time>Last call</p>
+          <h1 class="page-title" tabindex="-1">Before you go</h1>
+          <p class="lede">The quick answers about Manana Mex breakfast.</p>
+        </header>
+        <div class="faq-list">
+          <details open>
+            <summary>What time is breakfast served?</summary>
+            <p>From 6:00am to 10:30am at every restaurant, every day of the week. After 10:30 the kitchen switches to the lunch menu.</p>
+          </details>
+          <details>
+            <summary>Can I order the night before?</summary>
+            <p>Yes. Order in the app or on this site any time and choose a pickup slot for the next morning. Your order is made fresh at the time you pick, not the night before.</p>
+          </details>
+          <details>
+            <summary>How fast is it?</summary>
+            <p>Every burrito is made to order. If you order ahead, it's waiting on the pickup shelf at your time, so you don't queue at all. At the drive-thru, give your name at the speaker and drive straight to the window.</p>
+          </details>
+          <details>
+            <summary>Is there something under $10?</summary>
+            <p>The Mini Manana is $5.90, and the Uni Saver combo gets you a Mini, a hash brown and a flat white for $9.90.</p>
+          </details>
+          <details>
+            <summary>Do you have vegetarian, vegan or gluten-free options?</summary>
+            <p>The Green Light burrito and Mini Manana are vegetarian. The Tofu Ranchero Tacos and hash brown are vegan. The Sunrise Bowl and both tacos are made without gluten ingredients, but our kitchens do handle gluten.</p>
+          </details>
+          <details>
+            <summary>Which restaurants are open 24/7?</summary>
+            <p>31 of our restaurants never close. Use the Open 24/7 filter on the Find us page to see the ones near you. Breakfast is still served from 6:00am there.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <nav class="next-stop" aria-label="Next page" id="next-stop" hidden>
+    <div class="wrap">
+      <a href="#one-hand" id="ns-link">
+        <span class="ns-text"><span class="ns-label" id="ns-label">Next stop · 7:28am</span><span class="ns-title" id="ns-title">One hand for brekkie</span></span>
+        <span class="ns-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12 H19 M13 6 L19 12 L13 18" fill="none" stroke="#FFC21A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+    </div>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="foot-big">10:30am. <span>Brekkie's done.</span> See you at 6:00.</p>
+    <div class="foot-cols">
+      <div>
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="#menu">Brekkie menu</a></li>
+          <li><a href="#one-hand">The one-hand wrap</a></li>
+          <li><a href="#order">Order ahead</a></li>
+          <li><a href="#find">Find a restaurant</a></li>
+          <li><a href="#mascot">Meet Mananito</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Hours</h2>
+        <ul>
+          <li>Breakfast 6:00–10:30am daily</li>
+          <li>Lunch and dinner until late</li>
+          <li>31 restaurants open 24/7</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Follow the mornings</h2>
+        <ul>
+          <li>TikTok @mananamex</li>
+          <li>Instagram @mananamex</li>
+          <li>Episodes Tue 8am · Thu 4pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-fine">
+      <p>Concept website for the "Who Said Burritos Sleep In?" campaign, MMCC2030 Group 7, Macquarie University. Manana Mex is a fictional brand created for coursework. Menu items, prices, restaurant locations and offers are illustrative, and demo orders are not sent anywhere.</p>
+      <p>Group 7: Anh Thach · Quang Anh Nguyen · Nguyen Ngoc Tran Duong · Bao Quynh Lam · Claire Fleming</p>
+    </div>
+  </div>
+</footer>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="bag" id="bag" role="dialog" aria-modal="true" aria-labelledby="bag-title" aria-hidden="true">
+  <div class="bag-head">
+    <h2 id="bag-title">Your brekkie bag</h2>
+    <button class="icon-btn" id="bag-close" type="button" aria-label="Close bag"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3 L13 13 M13 3 L3 13" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></button>
+  </div>
+  <div class="bag-body" id="bag-body"></div>
+</aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
